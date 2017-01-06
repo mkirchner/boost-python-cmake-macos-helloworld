@@ -20,7 +20,11 @@ For Python3:
 
         brew install boost-python --with-python3
 
-In any case, make sure that you have matching calls to
+
+CMake prerequisites
+-------------------
+
+Make sure that you have matching Python versions for the calls to
 `find_package` for `PythonLibs` and `Boost` in your `CMakeLists.txt`.
 
 
