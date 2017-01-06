@@ -1,8 +1,5 @@
 /*
  * chello_ext.cpp
- * Copyright (C) 2017 Marc Kirchner
- *
- * Distributed under terms of the MIT license.
  */
 
 #include <boost/python.hpp>
