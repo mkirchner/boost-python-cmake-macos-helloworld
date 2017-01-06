@@ -1,11 +1,15 @@
 A minimal CMake boost::python example for MacOS
 ===============================================
 
-For some reason this has been hard to find on the internet.
+A minimal `boost::python` "Hello World!" example in the form of a `chello_ext`
+Python module.
+
+For some reason it has been hard to find something on the internet that
+actually compiles, links and is loadable as a Python module on macOS.
 
 
-Prerequisites
--------------
+macOS prerequisites
+-------------------
 
 Make sure you have `homebrew` installed, then:
 
