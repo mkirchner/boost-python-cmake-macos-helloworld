@@ -102,5 +102,4 @@ Learnings
 * Most of the examples on the internet lack the reference to the Python
   libraries in the link command.
 
-        target_link_libraries(chello_ext ${Boost_LIBRARIES} ${PYTHON_LIBRARIES}
-        chello)
+        target_link_libraries(chello_ext ${Boost_LIBRARIES} ${PYTHON_LIBRARIES} chello)
