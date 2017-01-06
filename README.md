@@ -34,6 +34,49 @@ For Python 2:
         ...
 
 
+Testing it out
+--------------
+
+```
+$ git clone git@github.com:mkirchner/boost-python-cmake-macos-helloworld.git
+Cloning into 'boost-python-cmake-macos-helloworld'...
+...
+Receiving objects: 100% (3/3), done.
+
+$ cd boost-python-cmake-macos-helloworld
+
+$ mkdir build
+
+$ cd build
+
+$ cmake ..
+-- The C compiler identification is AppleClang 8.0.0.8000038
+-- The CXX compiler identification is AppleClang 8.0.0.8000038
+...
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /your/path/boost-python-cmake-macos-helloworld/build
+
+$ make
+Scanning dependencies of target chello
+[ 25%] Building CXX object CMakeFiles/chello.dir/chello.cpp.o
+[ 50%] Linking CXX shared library libchello.dylib
+[ 50%] Built target chello
+Scanning dependencies of target chello_ext
+[ 75%] Building CXX object CMakeFiles/chello_ext.dir/chello_ext.cpp.o
+[100%] Linking CXX shared library chello_ext.so
+[100%] Built target chello_ext
+
+$ python3
+Python 3.5.2 (default, Sep 28 2016, 18:08:09) 
+[GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.38)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import chello_ext
+>>> print(chello_ext.greet())
+Hello, world!
+>>> 
+```
+
 Learnings
 ---------
 
