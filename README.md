@@ -6,6 +6,7 @@ Python module.
 
 For some reason it has been hard to find something on the internet that
 actually compiles, links and is loadable as a Python module on macOS.
+See the list of potential stumbling blocks in the 'Learnings' section below.
 
 
 macOS prerequisites
