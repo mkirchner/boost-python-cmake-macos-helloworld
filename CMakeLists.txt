@@ -10,14 +10,14 @@ add_definitions('-Wall')
 # python libs
 #
 # find_package(PythonLibs 2.7 REQUIRED)
-find_package(PythonLibs 3.5 REQUIRED)
+find_package(PythonLibs 3.7 REQUIRED)
 include_directories(${PYTHON_INCLUDE_DIRS})
 
 #
 # boost libs
 #
 # find_package(Boost COMPONENTS python REQUIRED)
-find_package(Boost COMPONENTS python3 REQUIRED)
+find_package(Boost COMPONENTS python37 REQUIRED)
 include_directories(${Boost_INCLUDE_DIR})
 
 message(STATUS "PYTHON_LIBRARIES = ${PYTHON_LIBRARIES}")
